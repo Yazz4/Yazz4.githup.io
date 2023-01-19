@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("photo.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            #image{
+                display: none;
+                margin-left: auto;
+                margin-right: auto;
+                width: 800px; height: 600px;
+                border-color: blueviolet;  border-radius: 200px; border-style: solid; border-width: 6px;
+            }
+            #btn{
+                margin-left: 32%; margin-right: 32%; margin-top: 3%;
+                color: rgb(120, 43, 226);
+                background-color: rgb(255, 140, 0);
+                border-color: red; border-width: 4px;
+                height: 50px; 
+                font-size: x-large; font-family: cursive; font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <button id = "btn" onclick="show()"> Show me the prittiest person in the world! </button>
+        <img id = "image" src = "photo2.jpeg">
+        <script>
+            function show(){
+                var image = document.getElementById("image");
+                image.style.display = "block";
+            }
+        </script>
+    </body>
+</html>
